@@ -1,0 +1,87 @@
+:root {
+    --black: #000;;
+    --white: #fff;
+    --dark-liver: #4d4d4d;
+    --gray: #f5f5f5;
+    --gray-secondary: #d4d4d4;
+    --green: #10a545;
+    --red: #d00808;
+    --text-color: #353434;
+    --red-secondary: #ab1f1f;
+}
+
+body {
+    background: var(--gray);
+    font-family: sans-serif;
+    color: var(--text-color);
+}
+
+
+
+.container {
+    border: 5px;
+    margin:auto;
+    width: 550px;
+}
+
+#todo {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    box-sizing: border-box;
+    border-bottom: 1px solid var(--gray);
+}
+
+#todo:focus {
+    outline: none;
+}
+
+#todo::placeholder {
+    font-size: 16px;
+    color: var(--gray-secondary);
+}
+
+.title {
+    color: var(--red-secondary);
+    opacity: 0.7;
+}
+
+.todo-section {
+    background: var(--white);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2), 0 25px 50px 0 rgba(0,0,0,0.1);
+}
+
+#todo-list {
+    padding: 0;
+    width: 100%;
+    list-style: none;
+}
+
+#todo-list li {
+    padding: 1rem 1rem;
+}
+
+#todo-list .todo-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.edit, .delete {
+    cursor: pointer;
+}
+
+.edit {
+    color: var(--green);
+}
+
+.delete {
+    color: var(--red);
+}
+
+.cancel {
+    margin-bottom: 8px;
+    padding: 8px 20px;
+    background: var(--white);
+    border: 1px solid var(--gray-secondary);
+}
+ 

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+    <title>TODO</title>
+    <link rel="stylesheet" type="text/css" href="todo.css"/>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="title">Todos</h1>
+        </header>
+
+        <div>
+            <span id="editing-todo" hidden>Editing...</span> 
+            <button id="cancel" class="cancel" hidden>Cancel</button>
+        </div>
+    
+        <section class="todo-section">
+            <input id="edit-todo" hidden/>
+            <!-- input field -->
+            <input id="todo" placeholder="Enter todo item">
+    
+            <ul id="todo-list">
+               
+            </ul>
+        </section>
+    </div>
+
+   
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="todo.js"></script>
+</body>
+</html>
